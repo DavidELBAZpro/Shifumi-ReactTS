@@ -1,10 +1,15 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Triangle from "../images/bg-triangle.svg"
+const Triangle = require("../images/bg-triangle.svg") as string
 
-export const Play = ({ setMyChoice }) => {
-  const setChoice = (e) => {
-    setMyChoice(e.target.dataset.id)
+
+interface PlayProps {
+  setMyChoice: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export const Play: React.FC<PlayProps> = ({ setMyChoice }) => {
+  const setChoice = (e: React.MouseEvent<HTMLDivElement>) => {
+    setMyChoice(e.currentTarget.dataset.id || "");
   }
 
   return (
