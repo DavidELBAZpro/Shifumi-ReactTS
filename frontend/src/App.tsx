@@ -5,9 +5,9 @@ import { Game } from "./components/Game"
 import { Footer } from "./components/Footer"
 import { Routes, Route } from "react-router-dom"
 
-function App() {
-  const [myChoice, setMyChoice] = useState("")
-  const [score, setScore] = useState(0)
+export function App() {
+  const [myChoice, setMyChoice] = useState<string>("");
+  const [score, setScore] = useState<number>(0);
 
   return (
     <>
@@ -28,4 +28,3 @@ function App() {
   )
 }
 
-export default App

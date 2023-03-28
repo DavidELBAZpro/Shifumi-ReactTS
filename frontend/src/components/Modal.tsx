@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
-const rules = require("../images/image-rules.svg") as string
-const close = require("../images/icon-close.svg") as string
+import rules from "../images/image-rules.svg"
+import  close from "../images/icon-close.svg"
 
 interface ModalProps {
   toggle: () => void

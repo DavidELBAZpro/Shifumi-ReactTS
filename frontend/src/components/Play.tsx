@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
-const Triangle = require("../images/bg-triangle.svg") as string
+import Triangle from "../images/bg-triangle.svg"
 
 
 interface PlayProps {
-  setMyChoice: React.Dispatch<React.SetStateAction<string>>;
+  setMyChoice: React.Dispatch<React.SetStateAction<string>>
 }
 
 export const Play: React.FC<PlayProps> = ({ setMyChoice }) => {
