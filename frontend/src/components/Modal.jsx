@@ -3,11 +3,8 @@ import ReactDOM from "react-dom"
 import rules from "../images/image-rules.svg"
 import  close from "../images/icon-close.svg"
 
-interface ModalProps {
-  toggle: () => void
-}
 
-export const Modal : React.FC<ModalProps>  = ({ toggle }) => {
+export const Modal = ({ toggle }) => {
   return ReactDOM.createPortal(
     <div className="modal-container">
       <div className="modal-box">
